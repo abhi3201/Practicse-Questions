@@ -1,0 +1,28 @@
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        //Intializing TreeSet
+        TreeSet <Integer> even=new TreeSet<>();
+        even.add(3);
+        even.add(2);
+        even.add(3);
+        even.add(5);
+        even.add(7);
+        even.add(1);
+        even.add(4);
+        //Iterating TreeSet
+        Iterator<Integer> itr=even.iterator();
+        //Printing Tree set
+        while(itr.hasNext()){
+            System.out.print(itr.next());
+            System.out.print(",");
+        }
+        System.out.println();
+        //Remove the element
+        System.out.println(even.remove(5));
+        System.out.println("After removing the element '5'="+even);
+        //Chech if element exist or not
+        System.out.println("Does the element 5 exist..? "+even.contains(5));
+        System.out.println("Does the element 5 exist..? "+even.contains(7));
+    }
+}
