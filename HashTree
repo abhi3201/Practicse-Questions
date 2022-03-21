@@ -1,0 +1,25 @@
+import java.util.HashSet;
+import java.util.Iterator;
+class Main{
+    public static void main(String args[]){
+        //Intializing the HashSet
+        HashSet<Integer> even = new HashSet<>();
+        even.add(2);
+        even.add(4);
+        even.add(6);
+        even.add(4);
+        even.add(8);
+        System.out.print("HashSet="+ even); 
+        System.out.println();
+        //Iterating the HashSet
+        Iterator <Integer> itr=even.iterator();
+        //Printing the HashSet
+        while(itr.hasNext()){
+            System.out.print(itr.next());
+            System.out.print(", ");
+        }
+        //Checking that element exist or not
+        System.out.println("Does the element '5 'exist ? "+ even.contains(5));
+         System.out.println("Does the element '4' exist ? "+ even.contains(4));
+    }
+}
